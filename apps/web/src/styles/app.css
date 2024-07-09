@@ -1,0 +1,5 @@
+html,
+body,
+#app {
+    @apply tw-h-[100vh] tw-w-full tw-flex tw-p-0 tw-m-0;
+}

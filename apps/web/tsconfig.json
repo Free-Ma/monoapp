@@ -1,0 +1,10 @@
+{
+  "extends": "@strong/code/tsconfig/next.json",
+  "compilerOptions": {
+      "paths": {
+          "@/*": ["./src/*"]
+      }
+  },
+  "include": ["next-env.d.ts", "typings/**/*.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

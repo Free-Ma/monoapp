@@ -1,0 +1,34 @@
+{
+  "name": "monoapp",
+  "private": true,
+  "scripts": {
+    "gen": "turbo gen workspace",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@strong/code": "workspace:*",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.5",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "updateConfig": {
+      "ignoreDependencies": [
+        "eslint"
+      ]
+    },
+    "peerDependencyRules": {
+      "allowAny": [
+        "@typescript-eslint/eslint-plugin"
+      ]
+    }
+  }
+}
