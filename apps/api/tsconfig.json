@@ -7,5 +7,5 @@
           "@/*": ["./src/*"]
       }
   },
-  "include": ["src", "test", "typings/**/*.d.ts", "**.js"]
+  "include": ["src", "bin", "test", "typings/**/*.d.ts", "**.js"]
 }

@@ -6,7 +6,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "api:dev": "turbo dev --filter=@strong/utils --filter=@strong/api"
   },
   "devDependencies": {
     "@strong/code": "workspace:*",

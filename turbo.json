@@ -14,9 +14,6 @@
       "cache": false,
       "persistent": true
     },
-    "@strong/api#dev": {
-        "dependsOn": ["^build"]
-    },
     "@strong/admin#dev": {
         "dependsOn": ["@strong/utils#build"]
     }
