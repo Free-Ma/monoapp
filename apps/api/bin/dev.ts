@@ -14,7 +14,6 @@ nodemon({
     watch: ['node_modules/@strong/**/dist/**/*'],
     ignore: [],
     ignoreRoot: [],
-    ext: 'js',
 }).on('quit', () => {
     process.exit();
 });

@@ -1,11 +1,13 @@
 {
   "extends": "@strong/code/tsconfig/node.json",
   "compilerOptions": {
-      "baseUrl": ".",
-      "outDir": "./dist",
-      "paths": {
-          "@/*": ["./src/*"]
-      }
-  },
-  "include": ["src", "bin", "test", "typings/**/*.d.ts", "**.js"]
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "module": "node16",
+        "moduleResolution": "node16"
+    },
+    "include": ["src", "bin", "test", "typings/**/*.d.ts", "**.js"]
 }

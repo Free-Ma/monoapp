@@ -22,7 +22,7 @@ export const deepMerge = <T1, T2>(
     return deepmerge(x, y, options) as T2 extends T1 ? T1 : T1 & T2;
 };
 
-export const echoTest = () => 'test';
+export const echoTest = () => 'changed!';
 
 /**
  * 获取dir参数相对于当前调用这个函数的文件的绝对路径
