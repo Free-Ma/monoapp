@@ -6,13 +6,26 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "api:dev": "turbo dev --filter=@strong/utils --filter=@strong/api"
+    "api:dev": "turbo dev --filter=utils --filter=@strong/api",
+    "api:build": "turbo build --filter=@strong/api",
+    "api:start": "turbo start --filter=@strong/api",
+    "api:cli": "turbo cli --filter=@strong/api --",
+    "admin:dev": "turbo dev --filter=@strong/admin",
+    "admin:build": "turbo dev --filter=@strong/build",
+    "admin:start": "turbo start --filter=@strong/admin",
+    "aa:dev": "turbo dev --filter=api --filter=@strong/admin",
+    "web:dev": "turbo dev --filter=@strong/web",
+    "web:build": "turbo build --filter=@strong/web",
+    "web:start": "turbo start --filter=@strong/web",
+    "wa:dev": "turbo dev --filter=api --filter=@strong/web",
+    "upall": "pnpm up --filter @strong/* --latest && pnpm up --latest",
+    "clean": "rimraf --glob '**/node_modules' && rimraf node_modules"
   },
   "devDependencies": {
     "@strong/code": "workspace:*",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
+    "rimraf": "^6.0.1",
     "turbo": "^2.0.5",
     "typescript": "^5.4.5"
   },

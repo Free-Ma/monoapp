@@ -1,3 +1,4 @@
+import { createStore } from '@strong/store';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -16,6 +17,7 @@ const App: FC = () => {
                             查看官网
                         </Link>
                     </Button>
+                    <p>{createStore()}</p>
                 </div>
             </div>
         </main>

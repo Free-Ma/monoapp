@@ -18,6 +18,16 @@ export const createConfig = (params: ConfigEnv, configure?: Configure): UserConf
                     localsConvention: 'camelCaseOnly',
                 },
             },
+            server: {
+                proxy: {
+                    '/api': {
+                        target: 'http://localhost:8080/api',
+                        changeOrigin: true,
+                        rewrite: (path) => path.replace(/^\/api/, ''),
+                    },
+                },
+                cors: true,
+            },
             plugins: createPlugins(isBuild),
         },
         typeof configure === 'function' ? configure(params, isBuild) : {},

@@ -6,9 +6,9 @@
     "private": true,
     "license": "UNLICENSED",
     "scripts": {
+        "cli": "nest",
         "dev": "bun bin/dev.ts",
         "build": "nest build",
-        "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "start": "nest start",
         "start:dev": "nest start --watch",
         "start:debug": "nest start --debug --watch",
@@ -51,6 +51,12 @@
         "ts-node": "^10.9.2",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.4.5"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/main.d.ts"
+        },
+        "./*": "./dist/*.d.ts"
     },
     "jest": {
         "moduleFileExtensions": [

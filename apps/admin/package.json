@@ -4,6 +4,7 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
+        "start": "pnpm preview",
         "dev": "vite --no-clearScreen",
         "build": "tsc && vite build",
         "preview": "vite preview",
@@ -12,12 +13,22 @@
         "lint:style": "stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/stylelint/"
     },
     "dependencies": {
+        "@ant-design/cssinjs": "^1.21.0",
+        "@strong/api": "workspace:*",
+        "@strong/store": "workspace:*",
+        "antd": "^5.19.2",
+        "axios": "^1.7.2",
+        "clsx": "^2.1.1",
+        "dayjs": "^1.11.12",
+        "immer": "^10.1.1",
+        "lodash": "^4.17.21",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },
     "devDependencies": {
         "@strong/code": "workspace:*",
         "@strong/utils": "workspace:*",
+        "@types/lodash": "^4.17.7",
         "@types/node": "^20.12.12",
         "@types/react": "^18.3.2",
         "@types/react-dom": "^18.3.0",

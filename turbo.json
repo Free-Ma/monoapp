@@ -19,6 +19,9 @@
     },
     "@strong/admin#dev": {
         "dependsOn": ["@strong/utils#build"]
+    },
+    "@strong/api#cli": {
+        "cache": false
     }
   }
 }
